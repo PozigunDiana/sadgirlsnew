@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Aeroport';
+    src: url('../font/Aeroport-medium.otf');
+    src: local('Aeroport medium'), url('../font/Aeroport-medium.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-family: 'Aeroport';
+    src: url('../font/Aeroport-regular.otf');
+    src: local('Aeroport regular'), url('../font/Aeroport-regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Migra';
+    src: url('../font/Migra-Extrabold.otf');
+    font-weight: 600;
+    font-style: normal;
+    font-family: 'Migra';
+    src: url('..//font/Migra-Extralight.otf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+html {
+    font-size: 18px;
+    background-color: #100E11;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    font-family: 'Aeroport';
+    font-weight: 400;
+    font-size: 1.25vw;
+    color: #FBF9FF;
+    background-repeat: no-repeat!important;
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0 auto;
+    min-width: 320px;
+}
+
+input {
+    -webkit-appearance: none;
+}
+
+:before,
+:after {
+    background-repeat: no-repeat!important;
+}
+
+.content {
+    width: 94.4vw;
+    margin: 0 auto;
+}
+
+[class^=wrapper-],
+[class*=" wrapper-"],
+[class*=-wrapper-],
+[class*=" wrapper-"],
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.wrapper-flex-start {
+    justify-content: flex-start;
+}
+
+a,
+span,
+em {
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+img {
+    display: block;
+}
+
+.center {
+    text-align: center;
+}
+
+.title-m {
+    font-family: 'Migra';
+    font-weight: 100;
+    letter-spacing: 0.1em;
+    font-size: 1.67vw;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.title-s {
+    font-size: 1.11vw;
+    margin-bottom: 30px;
+}
+
+.title-xl {
+    font-size: 6.94vw;
+    font-family: 'Migra';
+    font-weight: 100;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+}
+
+.title-l {
+    font-size: 3.61vw;
+    font-family: 'Migra';
+    font-weight: 100;
+    letter-spacing: 0.04em;
+}
+
+p {
+    margin: 15px 0;
+}
+
+footer {
+    height: 300px;
+}
+
+.wow {
+    visibility: hidden;
+}
+
+.d-none {
+    display: none;
+}
