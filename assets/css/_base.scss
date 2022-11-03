@@ -19,9 +19,43 @@
     font-style: normal;
 }
 
+$grey: #67646D;
 html {
     font-size: 18px;
     background-color: #100E11;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header {
+    flex: 0 0 auto;
+}
+
+body.ov-hidden {
+    overflow: hidden;
+}
+
+.main-content {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex: 0 0 auto;
+    background: #0f0d11;
+    position: relative;
+    z-index: 1;
 }
 
 * {
@@ -87,13 +121,35 @@ strong {
     font-weight: bold;
 }
 
-a {
+a,
+i,
+button {
     text-decoration: none;
-    transition: 0.5s;
+    transition: all 0.5s;
+}
+
+button:disabled {
+    cursor: no-drop;
+}
+
+a i {
+    transition: initial;
+}
+
+:before {
+    transition: all 0.5s;
+}
+
+:after {
+    transition: all 0.5s;
 }
 
 img {
     display: block;
+}
+
+span {
+    color: inherit;
 }
 
 .center {
@@ -114,6 +170,11 @@ img {
     margin-bottom: 30px;
 }
 
+.mini-title {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
 .title-xl {
     font-size: 6.94vw;
     font-family: 'Migra';
@@ -127,14 +188,12 @@ img {
     font-family: 'Migra';
     font-weight: 100;
     letter-spacing: 0.04em;
+    margin-bottom: 60px;
 }
 
 p {
-    margin: 15px 0;
-}
-
-footer {
-    height: 300px;
+    margin: 1.04vw 0;
+    line-height: 135%;
 }
 
 .wow {
@@ -143,4 +202,40 @@ footer {
 
 .d-none {
     display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+::-webkit-scrollbar-button {
+    width: 2px;
+    height: 2px;
+}
+
+.grey {
+    color: $grey;
+}
+
+p a {
+    color: inherit;
+    font-size: inherit;
+    border-bottom: 1px solid;
+}
+
+p a:hover {
+    color: #a8a8a8;
+}
+
+input:focus-visible {
+    outline: 0px;
+}
+
+.wrapper-modal-box-form {
+    margin-top: 2.78vw;
 }
