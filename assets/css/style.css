@@ -48,6 +48,7 @@ header {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+  position: relative;
 }
 
 body.ov-hidden {
@@ -144,8 +145,8 @@ a,
 i,
 button {
   text-decoration: none;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 button:disabled {
@@ -263,6 +264,15 @@ input:focus-visible {
   margin-top: 2.78vw;
 }
 
+.owl-nav.disabled {
+  display: none;
+}
+
+.main-content {
+  overflow: hidden;
+  padding-bottom: 2vw;
+}
+
 @-webkit-keyframes sh {
   25% {
     -webkit-transform: translate(-100%, -50%);
@@ -313,8 +323,8 @@ input:focus-visible {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .btn:hover {
@@ -399,9 +409,9 @@ header.active #navigation-box {
 }
 
 .mission-section {
-  margin-top: 180px;
+  margin-top: 12.50vw;
   position: relative;
-  padding-bottom: 190px;
+  padding-bottom: 13.19vw;
 }
 
 .mission-section .cloud-4 {
@@ -560,6 +570,11 @@ header.active #navigation-box {
   margin: 0 2.2vw -9.5%;
 }
 
+.super-nft-section {
+  border: 1px solid #67646D;
+  margin-top: 7.64vw;
+}
+
 .super-nft-section .image-girl-left {
   position: absolute;
   bottom: 4.4vw;
@@ -581,11 +596,6 @@ header.active #navigation-box {
 
 .super-nft-images-box {
   border: 0;
-}
-
-.super-nft-section {
-  border: 1px solid #67646D;
-  margin-top: 110px;
 }
 
 .super-nft-text {
@@ -636,7 +646,7 @@ header.active #navigation-box {
 }
 
 p + .base-link {
-  margin-top: 38px;
+  margin-top: 3.27vw;
 }
 
 .wrapper-super-nft {
@@ -710,7 +720,7 @@ p + .base-link {
   align-items: stretch;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  min-height: 60vh;
+  min-height: 32vw;
 }
 
 .wrapper-collection .collection-item .collection-min-info {
@@ -851,7 +861,7 @@ p + .base-link {
 }
 
 .base-m-top {
-  margin-top: 150px;
+  margin-top: 10.42vw;
 }
 
 .tabs__content {
@@ -898,7 +908,7 @@ p + .base-link {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 60px;
+  margin-bottom: 6.12vw;
 }
 
 .tabs ul li {
@@ -907,18 +917,15 @@ p + .base-link {
   cursor: pointer;
   border-bottom: 2px solid #272629;
   margin-bottom: -2px;
-  padding-bottom: 24px;
+  padding-bottom: 2.45vw;
+  font-size: 1.11vw;
+  text-transform: uppercase;
+  color: #67646D;
 }
 
 .tabs ul li.active {
   border-color: #fff;
   color: #FBF9FF;
-}
-
-.tabs li {
-  font-size: 1.11vw;
-  text-transform: uppercase;
-  color: #67646D;
 }
 
 .wrapper-nft-item {
@@ -951,7 +958,7 @@ p + .base-link {
 }
 
 .wrapper-nft-item .nft-price {
-  margin: 12px 0 27px;
+  margin: 1.22vw 0 2.76vw;
 }
 
 .wrapper-nft-item .nft-date {
@@ -961,10 +968,17 @@ p + .base-link {
 
 .roadmap-item {
   position: relative;
-  padding-left: 45px;
-  padding-right: 30px;
+  padding-left: 4.59vw;
+  padding-right: 3.06vw;
   width: 25.83vw;
-  padding-top: 33px;
+  padding-top: 3.37vw;
+}
+
+.roadmap-item .year {
+  font-family: 'Migra';
+  letter-spacing: 0.04em;
+  font-size: 1.7vw;
+  margin-top: 2vw;
 }
 
 .roadmap-item p {
@@ -1008,7 +1022,7 @@ p + .base-link {
 .roadmap-item .date {
   position: absolute;
   top: 0px;
-  left: 48px;
+  left: 4.90vw;
 }
 
 .roadmap-slider {
@@ -1246,23 +1260,23 @@ p + .base-link {
 }
 
 .m-top-80 {
-  margin-top: 80px;
+  margin-top: 5.56vw;
 }
 
 .m-top-160 {
-  margin-top: 160px;
+  margin-top: 11.11vw;
 }
 
 .m-top-180 {
-  margin-top: 180px;
+  margin-top: 12.50vw;
 }
 
 .m-top-280 {
-  margin-top: 280px;
+  margin-top: 19.44vw;
 }
 
 .m-top-120 {
-  margin-top: 120px;
+  margin-top: 8.33vw;
 }
 
 .PussyRiot-image {
@@ -1311,6 +1325,7 @@ p + .base-link {
 #GuyOSEARY {
   margin-left: 5.5vw;
   padding-right: 3vw;
+  margin-right: 3vw;
 }
 
 #GuyOSEARY .persona-info {
@@ -1335,8 +1350,12 @@ p + .base-link {
   align-items: center;
   text-align: center;
   position: absolute;
-  top: 0vw;
+  top: -0.8vw;
   left: 0px;
+}
+
+.lamp-image-box img {
+  width: 12.99vw;
 }
 
 .bottle-image-box {
@@ -1358,7 +1377,7 @@ p + .base-link {
 }
 
 .bottle-image-box img {
-  margin-top: 20px;
+  margin-top: 1.39vw;
   width: 5.8vw;
 }
 
@@ -1428,10 +1447,9 @@ p + .base-link {
   position: relative;
   background: url(../img/back-1.png) top center;
   background-size: cover;
-  margin-top: 70px;
-  padding: 10px 0;
+  margin-top: 7.14vw;
+  padding: 1.02vw 0;
   border-top: 1px solid #67646D;
-  overflow-x: scroll;
   white-space: nowrap;
 }
 
@@ -1452,7 +1470,6 @@ p + .base-link {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  padding-right: 1.5vw;
 }
 
 .pizza-image-box {
@@ -1505,7 +1522,7 @@ p + .base-link {
 
 .community-persona-element {
   position: relative;
-  padding-bottom: 8vw;
+  padding-bottom: 7.9vw;
   z-index: 2;
 }
 
@@ -1556,6 +1573,10 @@ p + .base-link {
   color: #67646D;
 }
 
+.persona-info div a:hover {
+  color: #fff;
+}
+
 .community-footer {
   min-height: 8.68vw;
   border-bottom: 1px solid #67646D;
@@ -1589,11 +1610,15 @@ p + .base-link {
   position: relative;
   font-family: 'Migra';
   text-transform: uppercase;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   background: initial;
   width: 100%;
   text-align: left;
+}
+
+.accordion button:hover {
+  opacity: 0.6;
 }
 
 .accordion button:not(:first-child) {
@@ -1618,15 +1643,15 @@ p + .base-link {
   height: 1.25vw;
   position: absolute;
   top: 15px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   right: 0px;
 }
 
 .accordion .panel {
   display: none;
   overflow: hidden;
-  padding-top: 20px;
+  padding-top: 1.39vw;
 }
 
 .wrapper-questions {
@@ -1718,7 +1743,7 @@ p + .base-link {
 }
 
 .wrapper-footer-section-down {
-  margin: 70px 0 30px;
+  margin: 7.14vw 0 3.06px;
 }
 
 .wrapper-footer-section-down .copy {
@@ -1757,7 +1782,7 @@ p + .base-link {
 }
 
 footer {
-  margin-top: 220px;
+  margin-top: 15.28vw;
 }
 
 .wrapper-foter-section {
@@ -1863,6 +1888,8 @@ footer {
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   position: relative;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
 }
 
 .community-slider .owl-stage {
@@ -1955,8 +1982,8 @@ footer {
 
 #navigation-box {
   position: absolute;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   width: 100vw;
   text-align: center;
   top: 0px;
@@ -2193,7 +2220,7 @@ header.active .d-none-menu {
 }
 
 .slider-top-sales.base-slider .owl-nav {
-  margin-top: 20px;
+  margin-top: 1.39vw;
 }
 
 .Top-Holders-section-bg {
@@ -2293,8 +2320,9 @@ header.active .d-none-menu {
   position: relative;
 }
 
-.owl-item.active:nth-child(3) .breed-item {
-  border-right-color: #67646D;
+.owl-item.active + .owl-item.active + .owl-item.active .breed-item {
+  border-color: #67646D;
+  border-right-width: 3px;
 }
 
 .breed-item {
@@ -2528,6 +2556,11 @@ header.header-basepage {
           justify-content: center;
 }
 
+.btn-white:hover {
+  background: initial;
+  color: #fff;
+}
+
 .wrapper-sneak-peeks-section {
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -2697,7 +2730,7 @@ header.header-basepage {
 .surep-ntl-title-with-icons .title img {
   display: inline-block;
   width: 2.5vw;
-  margin: 0 20px 0 8px;
+  margin: 0 1.39vw 0 8px;
   position: relative;
   top: -8px;
 }
@@ -2797,7 +2830,16 @@ header.header-basepage {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.wrapper-set-item-images.wrap .set-item-image {
+  margin-bottom: 0.83vw;
+}
+
+.wrapper-set-item-images.images-list .set-item-image {
+  margin-right: 0.6vw;
 }
 
 .wrapper-set-item-images img {
@@ -2843,12 +2885,30 @@ header.header-basepage {
 }
 
 .wrapper-set-item-images + .title {
-  margin-top: 2.78vw;
+  margin-top: 2.3vw;
+}
+
+.wrapper-set-item-images.images-list.wrap {
+  -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
+}
+
+.up-box {
+  margin-top: -1.5vw;
+}
+
+.title.m-top-30 {
+  margin-top: 2vw;
+}
+
+.up-box2 {
+  margin-top: -1.2vw;
 }
 
 .set-info {
   border: 1px solid #333333;
-  padding: 2.78vw;
+  padding: 2vw;
+  padding-right: 2vw;
   height: 100%;
   position: absolute;
   top: 0px;
@@ -2856,15 +2916,22 @@ header.header-basepage {
   background: #100e11;
   width: 100%;
   opacity: 0;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.set-info .title-s-set-box {
+  font-size: 0.97vw;
+  margin-bottom: 0.76vw;
+  color: #67646D;
+  line-height: 120%;
 }
 
 .set-info .title {
   font-size: 1.11vw;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  margin-bottom: 1.11vw;
+  margin-bottom: 0.9vw;
 }
 
 .set-item:hover > img,
@@ -2875,6 +2942,7 @@ header.header-basepage {
 .set-item {
   position: relative;
   width: 100%;
+  margin-right: 2px;
 }
 
 .set-item:hover .set-info {
@@ -3033,8 +3101,8 @@ header.header-basepage {
   border: none;
   cursor: pointer;
   text-align: left;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3085,8 +3153,8 @@ header.header-basepage {
   z-index: -99;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .sets-sidebar {
@@ -3268,8 +3336,8 @@ header.header-basepage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .help:hover {
@@ -3328,8 +3396,8 @@ header.header-basepage {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .btn-maxi:not(:disabled):hover {
@@ -3354,8 +3422,8 @@ header.header-basepage {
   border-radius: 8px;
   background: #FBF9FF;
   color: #100E11;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .mint-btn:not(:disabled):hover {
@@ -3419,11 +3487,13 @@ header.header-bg {
   border-top: 1px solid #333333;
 }
 
+.wrapper-nft-items-section {
+  width: 110% !important;
+}
+
 .nft-item {
-  min-width: 6.67vw;
-  width: 6.67vw;
-  max-width: 6.67vw;
-  height: 8.06vw;
+  width: 100%;
+  min-height: 8.06vw;
   background: #292929;
   border-radius: 4px;
   display: -webkit-box;
@@ -3470,17 +3540,7 @@ header.header-bg {
 
 .nft-items-section-bg {
   width: 45vw;
-  overflow: auto;
   overflow-y: hidden;
-}
-
-.wrapper-nft-items-section {
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  width: auto;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
 }
 
 :root {
@@ -3939,8 +3999,8 @@ header.header-bg {
   height: 0.90vw !important;
   top: 1.67vw;
   right: 1.67vw;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .fancybox-content.fancybox-modal-box button.fancybox-button.fancybox-close-small:hover {
@@ -4110,5 +4170,262 @@ header.header-bg {
 .checked-nft:hover .wrapper-edit-delete {
   opacity: 1;
   z-index: 2;
+}
+
+.opensea-link {
+  position: absolute;
+  bottom: -9vw;
+  right: 27vw;
+  width: 13.89vw;
+}
+
+.opensea-link img {
+  display: block;
+  width: 100%;
+  animation: 1s linear 0s normal none infinite running rot;
+  -webkit-animation: 15s linear 0s normal none infinite running rot;
+}
+
+.opensea-link:hover i {
+  color: #fff;
+}
+
+.opensea-link i {
+  position: absolute;
+  left: calc(50% - 1vw);
+  top: calc(50% - 1vw);
+  font-size: 2vw;
+  color: grey;
+}
+
+@keyframes rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rot {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+header.after-box:not(.active):after {
+  content: "";
+  display: block;
+  width: 33.5%;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 66.5%;
+  border-left: 1px solid #333333;
+}
+
+@media all and (max-width: 980px) {
+  * {
+    font-size: 1.65vw;
+  }
+  p {
+    font-size: 1.65vw;
+  }
+  header.header-startpage {
+    height: auto;
+    min-height: 91vh;
+    overflow-x: hidden;
+  }
+  .super-nft-section {
+    margin-top: 0;
+  }
+  .header-text-section,
+  .base-content {
+    width: 62.5vw;
+  }
+  .header-text-section,
+  .base-content {
+    width: 90%;
+  }
+  .header-startpage.active {
+    min-height: 100vh;
+  }
+  header.active #navigation-box {
+    height: 85vh;
+  }
+  .follow-cursor {
+    display: none;
+  }
+  .header-startpage.active {
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  .header-startpage.active + .main-content {
+    display: none;
+  }
+  header.active .d-none-menu {
+    margin-bottom: 0;
+  }
+  body.ov-hidden {
+    position: fixed;
+    overflow: hidden;
+  }
+  .header-start-page-text div {
+    font-size: 6.5vw;
+  }
+  .two-columns p,
+  .cap-wrapper-menu li a,
+  .wrapper-cap-btn .btn,
+  .super-nft-text p,
+  .base-link,
+  .title-s,
+  .tabs ul li {
+    font-size: 1.65vw;
+  }
+  .wrapper-cap-btn .btn {
+    width: 18.27vw;
+    height: 4.08vw;
+  }
+  #navigation .nav-point {
+    width: 0.41vw;
+    height: 0.41vw;
+  }
+  .header .logo img {
+    width: 3.37vw;
+  }
+  .title-m {
+    font-size: 1.8vw;
+  }
+  .arrow {
+    width: 1.73vw;
+  }
+  p + .base-link {
+    margin-top: 1vw;
+  }
+  .super-nft-text {
+    width: 30vw;
+    padding-right: 2vw;
+  }
+  .wrapper-super-nft {
+    padding-top: 5vw;
+  }
+  .super-nft-bottom {
+    height: 5vw;
+  }
+  .super-nft-section .image-girl-left {
+    bottom: 5vw;
+  }
+  .super-nft-section .image-boy-right {
+    bottom: -1.9vw;
+  }
+  .super-nft-text .title-m {
+    margin-top: 0;
+  }
+  .super-nft-text {
+    margin-top: -2vw;
+  }
+  .mission-section {
+    margin-top: 13.57vw;
+  }
+  .title-l {
+    font-size: 3.88vw;
+  }
+  .title-xl {
+    font-size: 6.5vw;
+    margin-bottom: 5.10vw;
+  }
+  .wrapper-collection .collection-item:hover p {
+    -webkit-line-clamp: initial;
+  }
+  .wrapper-collection .collection-item {
+    min-height: 39vw;
+  }
+  .wrapper-collection .collection-item .collection-summary .item {
+    width: calc(100% / 2);
+  }
+  .wrapper-nft-item img {
+    width: 7.14vw;
+    margin-right: 1.73vw;
+  }
+  .wrapper-nft-item .nft-number {
+    font-size: 1.4vw;
+  }
+  .wrapper-nft-item .nft-date,
+  .wrapper-slider-news-item .news-description .date,
+  [class^=counter-] {
+    font-size: 1.4vw;
+  }
+  .wrapper-nft-item .nft-price {
+    margin-bottom: 2.04vw;
+  }
+  .roadmap-item {
+    width: 40vw;
+  }
+  .wrapper-slider-news-item img {
+    width: 7.14vw;
+  }
+  .wrapper-slider-news-item .news-description p {
+    font-size: 1.4vw;
+    line-height: 125%;
+  }
+  .wrapper-slider-news-item {
+    padding: 2.65vw;
+  }
+  .base-slider .owl-nav button {
+    width: 9.18vw;
+    height: 9.18vw;
+  }
+  .owl-nav button img {
+    width: 1.73vw;
+  }
+  [class^=counter-] {
+    top: -6vw;
+  }
+  .persona-info div span {
+    font-size: 1.4vw;
+    margin-bottom: 0.3vw;
+  }
+  .bottle-image-box img {
+    width: 5.71vw;
+  }
+  .persona-info img {
+    width: 5.1vw;
+  }
+  .pizza-image-box img {
+    width: 14.18vw;
+  }
+  .image-element.JOEL-MADDEN-image {
+    width: 27.45vw;
+  }
+  .community-persona-element {
+    padding-bottom: 10.82vw;
+  }
+  .persona-info {
+    height: 10.82vw;
+  }
+  .community-persona-element:before {
+    height: 10.82vw;
+  }
+  .icon-link {
+    width: 5.31vw;
+    height: 5.31vw;
+  }
+  .pizza-image-box {
+    bottom: 5vw;
+  }
+  #JOEL-MADDEN {
+    z-index: 3;
+  }
+  #JOEL-MADDEN .persona-info {
+    right: -50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

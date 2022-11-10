@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css?ver=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css?ver=3">
+    <script src="assets/js/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/fontello/css/fontello.css?ver=1">
     <title>Index</title>
 </head>
 
 <body>
+    <img src="assets/img/text-background.png" class="d-none" alt="">
     <header class="header-startpage" id="header-startpage">
         <div class="header">
             <div class="content">
@@ -441,10 +442,12 @@
                     <div class="roadmap-item">
                         <div class="date">August 23 </div>
                         <p>Sad Girls Bar released: 10.000 hand-drawn ERC721 NFTs worthy to fall in love with started their monochrome journey in web3.</p>
+                        <div class="year">Q3 2021</div>
                     </div>
                     <div class="roadmap-item">
                         <div class="date">September 26</div>
                         <p>Sad Girls Bar collection sold out: All the Sad Girls have found their new homes.</p>
+                        <div class="year">Q4 2021</div>
                     </div>
                     <div class="roadmap-item">
                         <div class="date">October 10 </div>
@@ -463,6 +466,7 @@
                     <div class="roadmap-item">
                         <div class="date">December 11</div>
                         <p>Mental Health Support @ Discord: SGB has collaborated with LogOut.org – Centre for Digital Well-being – on creating Mental Health Support channel at SGB Discord, regularly curated by a qualified specialist.</p>
+
                     </div>
                     <div class="roadmap-item">
                         <div class="date">December 22</div>
@@ -475,6 +479,7 @@
                     <div class="roadmap-item">
                         <div class="date">January 16</div>
                         <p>Sad Cats sold out: All of the glamorous Sad Cats have found people they're comfortable with. </p>
+                        <div class="year">Q1 2022</div>
                     </div>
                     <div class="roadmap-item">
                         <div class="date">January 26</div>
@@ -483,6 +488,7 @@
                     <div class="roadmap-item">
                         <div class="date">March 7</div>
                         <p>Sad Girls Bar included in groupHUG #0002: SGB project was chosen to join brand new accelerator programme founded by Randi Zuckerberg and Debbie Soon.</p>
+                        <div class="year">Q2 2022</div>
                     </div>
                     <div class="roadmap-item">
                         <div class="date">March 11</div>
@@ -515,6 +521,7 @@
                     <div class="roadmap-item">
                         <div class="date">June</div>
                         <p>New Website. Launch.</p>
+                        <div class="year">Q3 2022</div>
                     </div>
                     <div class="roadmap-item">
                         <div class="date">June</div>
@@ -706,9 +713,9 @@
                     </div>
                 </div>
             </div>
-            <div class="community-section-box scroll">
+            <div class="community-section-box scroll-">
                 <div class="community-slider">
-                    <div class="scroll-helper"></div>
+
                     <div class="community-persona-element" id="PussyRiot">
                         <div class="bottle-image-box">
                             <a href="" target="_blank" class="icon-link"><i class="icon-discord"></i></a>
@@ -1047,20 +1054,9 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.css">
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/parallax.js"></script>
+    <script src="assets/js/jquery.mousewheel.min.js"></script>
     <script src="assets/js/owl.carousel.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
-        let scroll = document.querySelector('.scroll'),
-            cur = scroll.scrollLeft || 0,
-            event = function(e) {
-                if (e.currentTarget.scrollLeft !== cur) {
-                    document.querySelector('.scroll-helper').remove();
-                    scroll.removeEventListener('scroll', event);
-                }
-            }
-
-        scroll.addEventListener('scroll', event);
-    </script>
+    <script src="assets/js/main.js?ver=2"></script>
 </body>
 
 </html>

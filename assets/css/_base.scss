@@ -20,6 +20,7 @@
 }
 
 $grey: #67646D;
+$basetransitiontime: all 0.3s;
 html {
     font-size: 18px;
     background-color: #100E11;
@@ -31,6 +32,7 @@ body {
 
 html {
     height: 100%;
+    // overflow-x: hidden;
 }
 
 body {
@@ -41,6 +43,7 @@ body {
 
 header {
     flex: 0 0 auto;
+    position: relative;
 }
 
 body.ov-hidden {
@@ -125,7 +128,7 @@ a,
 i,
 button {
     text-decoration: none;
-    transition: all 0.5s;
+    transition: $basetransitiontime
 }
 
 button:disabled {
@@ -238,4 +241,13 @@ input:focus-visible {
 
 .wrapper-modal-box-form {
     margin-top: 2.78vw;
+}
+
+.owl-nav.disabled {
+    display: none;
+}
+
+.main-content {
+    overflow: hidden;
+    padding-bottom: 2vw;
 }

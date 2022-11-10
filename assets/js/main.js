@@ -59,7 +59,42 @@ $('.roadmap-slider').owlCarousel({
     margin: 0,
     nav: true,
     autoWidth: true,
-    items: 3
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        981: {
+            items: 3
+        }
+    }
+})
+
+
+
+
+$('.community-slider').owlCarousel({
+    nav: false,
+    loop: true,
+    autoplay: true,
+    autoWidth: true,
+    smartSpeed: 7500,
+    autoplayTimeout: 2000,
+    slideTransition: 'linear'
+});
+
+
+
+$('.slider-nft-item').owlCarousel({
+    loop: false,
+    margin: 20,
+    nav: false,
+    items: 5
+        // autoplayHoverPause: true,
+        // smartSpeed: 7500
+        // slideTransition: 'linear'
 });
 
 
