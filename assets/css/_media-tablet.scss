@@ -1,0 +1,198 @@
+@media all and (max-width:980px) {
+    * {
+        font-size: 1.65vw;
+    }
+    p {
+        font-size: 1.65vw;
+    }
+    header.header-startpage {
+        height: auto;
+        min-height: 91vh;
+        overflow-x: hidden;
+    }
+    .super-nft-section {
+        margin-top: 0;
+    }
+    .header-text-section,
+    .base-content {
+        width: 62.5vw;
+    }
+    .header-text-section,
+    .base-content {
+        width: 90%;
+    }
+    .header-startpage.active {
+        min-height: 100vh;
+    }
+    header.active #navigation-box {
+        height: 85vh;
+    }
+    .follow-cursor {
+        display: none;
+    }
+    .header-startpage.active {
+        min-height: 100vh;
+        overflow: hidden;
+    }
+    .header-startpage.active+.main-content {
+        display: none;
+    }
+    header.active .d-none-menu {
+        margin-bottom: 0;
+    }
+    body.ov-hidden {
+        position: fixed;
+        overflow: hidden;
+    }
+    .header-start-page-text div {
+        font-size: 6.5vw;
+    }
+    .two-columns p,
+    .cap-wrapper-menu li a,
+    .wrapper-cap-btn .btn,
+    .super-nft-text p,
+    .base-link,
+    .title-s,
+    .tabs ul li {
+        font-size: 1.65vw;
+    }
+    .wrapper-cap-btn .btn {
+        width: 18.27vw;
+        height: 4.08vw;
+    }
+    #navigation .nav-point {
+        width: 0.41vw;
+        height: 0.41vw;
+    }
+    .header .logo img {
+        width: 3.37vw;
+    }
+    .title-m {
+        font-size: 1.8vw;
+    }
+    .arrow {
+        width: 1.73vw;
+    }
+    p {
+        &+.base-link {
+            margin-top: 1vw;
+        }
+    }
+    .super-nft-text {
+        width: 30vw;
+        padding-right: 2vw;
+    }
+    .wrapper-super-nft {
+        padding-top: 5vw;
+    }
+    .super-nft-bottom {
+        height: 5vw;
+    }
+    .super-nft-section .image-girl-left {
+        bottom: 5vw;
+    }
+    .super-nft-section .image-boy-right {
+        bottom: -1.9vw;
+    }
+    .super-nft-text .title-m {
+        margin-top: 0;
+    }
+    .super-nft-text {
+        margin-top: -2vw;
+    }
+    .mission-section {
+        margin-top: 13.57vw;
+    }
+    .title-l {
+        font-size: 3.88vw;
+    }
+    .title-xl {
+        font-size: 6.5vw;
+        margin-bottom: 5.10vw;
+    }
+    .wrapper-collection .collection-item:hover p {
+        -webkit-line-clamp: initial;
+    }
+    .wrapper-collection .collection-item {
+        min-height: 39vw;
+    }
+    .wrapper-collection .collection-item .collection-summary .item {
+        width: calc(100% / 2);
+    }
+    .wrapper-nft-item img {
+        width: 7.14vw;
+        margin-right: 1.73vw;
+    }
+    .wrapper-nft-item .nft-number {
+        font-size: 1.4vw;
+    }
+    .wrapper-nft-item .nft-date,
+    .wrapper-slider-news-item .news-description .date,
+    [class^=counter-] {
+        font-size: 1.4vw;
+    }
+    .wrapper-nft-item .nft-price {
+        margin-bottom: 2.04vw;
+    }
+    .roadmap-item {
+        width: 40vw;
+    }
+    .wrapper-slider-news-item img {
+        width: 7.14vw;
+    }
+    .wrapper-slider-news-item .news-description p {
+        font-size: 1.4vw;
+        line-height: 125%;
+    }
+    .wrapper-slider-news-item {
+        padding: 2.65vw;
+    }
+    .base-slider .owl-nav button {
+        width: 9.18vw;
+        height: 9.18vw;
+    }
+    .owl-nav button img {
+        width: 1.73vw;
+    }
+    [class^=counter-] {
+        top: -6vw;
+    }
+    .persona-info div span {
+        font-size: 1.4vw;
+        margin-bottom: 0.3vw;
+    }
+    .bottle-image-box img {
+        width: 5.71vw;
+    }
+    .persona-info img {
+        width: 5.1vw;
+    }
+    .pizza-image-box img {
+        width: 14.18vw;
+    }
+    .image-element.JOEL-MADDEN-image {
+        width: 27.45vw;
+    }
+    .community-persona-element {
+        padding-bottom: 10.82vw;
+    }
+    .persona-info {
+        height: 10.82vw;
+    }
+    .community-persona-element:before {
+        height: 10.82vw;
+    }
+    .icon-link {
+        width: 5.31vw;
+        height: 5.31vw;
+    }
+    .pizza-image-box {
+        bottom: 5vw;
+    }
+    #JOEL-MADDEN {
+        z-index: 3;
+        .persona-info {
+            right: -50px;
+        }
+    }
+}
