@@ -58,6 +58,7 @@ $('.roadmap-slider').owlCarousel({
     loop: false,
     margin: 0,
     nav: true,
+    autoHeight: true,
     autoWidth: true,
     responsive: {
         0: {
@@ -70,7 +71,7 @@ $('.roadmap-slider').owlCarousel({
             items: 3
         }
     }
-})
+});
 
 
 
@@ -89,13 +90,22 @@ $('.community-slider').owlCarousel({
 
 $('.slider-nft-item').owlCarousel({
     loop: false,
-    margin: 20,
     nav: false,
-    items: 5
-        // autoplayHoverPause: true,
-        // smartSpeed: 7500
-        // slideTransition: 'linear'
+    items: 5,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            margin: 10
+        },
+        981: {
+            items: 5,
+            margin: 20
+        }
+    }
 });
+
 
 
 $('.slider-team').owlCarousel({
@@ -146,28 +156,57 @@ owl.on('changed.owl.carousel', function(e) {
     $('.counter-2').text(++e.page.index + '/' + e.item.count)
 });
 
-
-$('.slider-breeds').owlCarousel({
+var owl = $('.slider-breeds');
+owl.owlCarousel({
     loop: false,
-    items: 3,
     margin: 0,
-    nav: true
+    nav: true,
+    dotsEach: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        981: {
+            items: 3
+        }
+    },
+    onInitialized: function(e) {
+        $('.counter-3').text('1/' + this.items().length)
+        console.log();
+    }
 });
+owl.on('changed.owl.carousel', function(e) {
+    $('.counter-3').text(++e.page.index + '/' + e.item.count)
+});
+
+
 
 
 var owl = $('.slider-sets');
 owl.owlCarousel({
     loop: false,
-    items: 3,
-    margin: 25,
     nav: true,
+    dotsEach: true,
+    responsive: {
+        0: {
+            margin: 10
+        },
+        981: {
+            items: 3,
+            margin: 20
+
+        }
+    },
     onInitialized: function(e) {
-        $('.counter-2').text('1/' + this.items().length)
+        $('.counter-3').text('1/' + this.items().length)
         console.log();
     }
 });
 owl.on('changed.owl.carousel', function(e) {
-    $('.counter-2').text(++e.page.index + '/' + e.item.count)
+    $('.counter-3').text(++e.page.index + '/' + e.item.count)
 });
 
 
@@ -193,3 +232,12 @@ if ($(window).width() > 700) {
         center: true
     });
 };
+
+$('.btn,.collection-item,.header-start-page-text a').bind('touchstart', function() {});
+
+$(document).ready(function() {
+    $(".collection-item").click(function() {
+        $(this).toggleClass("click");
+        return false;
+    });
+});
