@@ -251,3 +251,11 @@ input:focus-visible {
     overflow: hidden;
     padding-bottom: 2vw;
 }
+
+button {
+    outline: inherit !important;
+}
+
+body {
+    overflow-x: hidden;
+}

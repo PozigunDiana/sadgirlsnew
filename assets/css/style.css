@@ -273,6 +273,14 @@ input:focus-visible {
   padding-bottom: 2vw;
 }
 
+button {
+  outline: inherit !important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 @-webkit-keyframes sh {
   25% {
     -webkit-transform: translate(-100%, -50%);
@@ -487,10 +495,10 @@ header.active #navigation-box {
 }
 
 .header-text .header-text-first {
-  font-size: 6.94vw;
-  font-family: 'Migra';
-  font-weight: 100;
-  line-height: 95%;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
   background: url(../img/text-background.png) no-repeat center/cover;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -533,6 +541,10 @@ header.active #navigation-box {
   opacity: 1;
 }
 
+.header-text.header-text-mini {
+  font-size: 5vw;
+}
+
 .header-bottom-box {
   width: 100%;
   -ms-flex-item-align: end;
@@ -548,7 +560,7 @@ header.active #navigation-box {
 .cloud-second,
 .cloud-third {
   position: absolute;
-  z-index: 0;
+  z-index: 1;
 }
 
 .cloud-first {
@@ -557,7 +569,7 @@ header.active #navigation-box {
 }
 
 .cloud-second {
-  top: -12%;
+  top: -10vw;
   right: 16vw;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
@@ -567,7 +579,12 @@ header.active #navigation-box {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
   top: 15vw;
-  right: -18vw;
+  right: 0px;
+}
+
+.cloud-third img {
+  left: -13vw;
+  position: relative;
 }
 
 .super-nft-images-box {
@@ -731,7 +748,7 @@ p + .base-link {
   align-items: stretch;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  min-height: 32vw;
+  height: 30vw;
 }
 
 .wrapper-collection .collection-item .collection-min-info {
@@ -782,15 +799,21 @@ p + .base-link {
   align-self: flex-start;
 }
 
-.wrapper-collection .collection-item:hover p {
+.wrapper-collection .collection-item .collection-all-info > p {
+  margin: 30px 0;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.wrapper-collection .collection-item p {
   color: #67646D;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
 
-.wrapper-collection .collection-item:hover .collection-summary {
+.wrapper-collection .collection-item .collection-summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1639,17 +1662,23 @@ p + .base-link {
 .accordion button.active {
   border-top: 1px solid;
   border-image-source: url(../img/text-background.png);
+  background-size: cover;
   border-image-slice: 1;
+  border-bottom: 0px !important;
+  border-right: 0px !important;
+  border-left: 0px !important;
 }
 
 .accordion button.active:after {
   background: url(../img/Arrow_up.svg);
+  background-size: cover;
 }
 
 .accordion button:after {
   content: "";
   display: block;
   background: url(../img/Arrow_down.svg);
+  background-size: cover;
   width: 1.25vw;
   height: 1.25vw;
   position: absolute;
@@ -1682,7 +1711,7 @@ p + .base-link {
 }
 
 .m-top-130 {
-  margin-top: 130px;
+  margin-top: 9vw;
 }
 
 .content .base-width-content {
@@ -1822,6 +1851,37 @@ footer {
   font-size: 2.75vw;
   font-family: 'Migra';
   margin: 1vw 0 0.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.team-man .name a {
+  line-height: 100%;
+  margin-right: 1vw;
+  border: 1px solid;
+  border-radius: 100%;
+  width: 3vw;
+  height: 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.team-man .name a:hover {
+  opacity: 0.5;
 }
 
 .team-man p {
@@ -1834,6 +1894,20 @@ footer {
 
 .team-man img {
   height: 6.74vw;
+}
+
+.set-item .name:empty {
+  background: #000;
+  width: 100% !important;
+  height: 6vw;
+  bottom: 0;
+}
+
+.wrapper-Glam-Backett-box .name a,
+.wrapper-Glam-Backett-box .name a i {
+  background: initial;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
 }
 
 .wrapper-Glam-Backett-box {
@@ -2437,7 +2511,6 @@ header.active .d-none-menu {
       align-self: flex-end;
   position: relative;
   width: 100%;
-  margin-bottom: 13vw;
 }
 
 .wrapper-super-nft-images-section {
@@ -2610,6 +2683,10 @@ header.header-basepage {
   left: 0px;
   border-top: 2px solid #fff;
   border-left: 2px solid #fff;
+  border-image-source: url(../img/text-background.png);
+  border-image-slice: 2;
+  border-bottom: 0px !important;
+  border-right: 0px !important;
 }
 
 .corner-box:after {
@@ -2617,6 +2694,10 @@ header.header-basepage {
   right: 30px;
   border-top: 2px solid #fff;
   border-right: 2px solid #fff;
+  border-image-source: url(../img/text-background.png);
+  border-image-slice: 2;
+  border-left: 0px !important;
+  border-bottom: 0px !important;
 }
 
 .cats-box {
@@ -2675,8 +2756,6 @@ header.header-basepage {
   width: 2.57vw;
   height: 2.57vw;
   display: block;
-  border-image-source: url(../img/text-background.png);
-  border-image-slice: 2;
   z-index: 1;
   opacity: 0;
 }
@@ -2693,6 +2772,10 @@ header.header-basepage {
   left: 0px;
   border-left: 2px solid #fff;
   border-bottom: 2px solid #fff;
+  border-image-source: url(../img/text-background.png);
+  border-image-slice: 2;
+  border-right: 0px !important;
+  border-top: 0px !important;
 }
 
 .cornet-box-inside:after {
@@ -2700,6 +2783,10 @@ header.header-basepage {
   right: 30px;
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff;
+  border-image-source: url(../img/text-background.png);
+  border-image-slice: 2;
+  border-left: 0px !important;
+  border-top: 0px !important;
 }
 
 .boys-box.corner-box:before {
@@ -3019,8 +3106,13 @@ header.header-basepage {
 }
 
 .slider-sets .owl-nav,
-.slider-sets + .counter-2 {
-  margin-left: 29vw;
+.slider-sets + .counter-3 {
+  width: 57vw;
+  float: right;
+}
+
+.slider-sets {
+  overflow: hidden;
 }
 
 .slider-team .owl-nav,
@@ -3086,7 +3178,7 @@ header.header-basepage {
   z-index: 99;
 }
 
-.wrapper-cap-btn .btn:hover .connect-box-bg {
+.wrapper-cap-btn .btn:hover .connect-box-bg, .wrapper-cap-btn .btn:focus .connect-box-bg {
   z-index: 10;
   visibility: visible;
   opacity: 1;
@@ -4207,6 +4299,7 @@ header.header-bg {
   bottom: -9vw;
   right: 27vw;
   width: 13.89vw;
+  z-index: 99;
 }
 
 .opensea-link img {
@@ -4426,17 +4519,63 @@ header.after-box:not(.active):after {
   position: relative;
 }
 
-@media all and (max-width: 980px) {
+.title-xl + .center {
+  width: 100%;
+  margin-bottom: 2vw;
+}
+
+.base-grey-color *,
+.base-grey-color {
+  color: #67646D;
+}
+
+.title-l + .base-grey-color {
+  margin-top: -2vw;
+}
+
+.title-xl + .base-grey-color {
+  margin-top: -2vw;
+}
+
+header.header-basepage.super-nft-header {
+  margin-bottom: 16vw;
+}
+
+@media only screen and (max-width: 1200px) {
+  header.header-basepage.super-nft-header {
+    margin-bottom: 9vw;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
   * {
     font-size: 1.65vw;
   }
   p {
     font-size: 1.65vw;
   }
-  header.header-startpage {
-    height: auto;
-    min-height: 91vh;
-    overflow-x: hidden;
+  .cloud-first,
+  .cloud-second,
+  .cloud-third {
+    zoom: 0.8;
+  }
+  header .cloud-second {
+    display: none;
+  }
+  header.header-basepage.super-nft-header .cloud-6 {
+    display: none;
+  }
+  .surep-ntl-title-section .cloud-5 {
+    display: none;
+  }
+  .cloud-third {
+    top: 15vw;
+    right: 0px;
+  }
+  .cloud-third img {
+    left: 0px;
+    position: relative;
+    width: 100%;
   }
   .super-nft-section {
     margin-top: 0;
@@ -4470,10 +4609,11 @@ header.after-box:not(.active):after {
   }
   body.ov-hidden {
     position: fixed;
+    width: 100%;
     overflow: hidden;
   }
   .header-start-page-text div {
-    font-size: 6.5vw;
+    font-size: 7vw;
   }
   .two-columns p,
   .cap-wrapper-menu li a,
@@ -4653,9 +4793,8 @@ header.after-box:not(.active):after {
   .header-text {
     font-size: 6.5vw;
   }
-  header.header-basepage {
-    min-height: 65vh;
-    height: auto;
+  header.header-basepage.active {
+    height: 100vh;
   }
   .opensea-link {
     bottom: 0vw;
@@ -4766,6 +4905,10 @@ header.after-box:not(.active):after {
     max-height: 3.47vw;
     max-width: 4.29vw;
   }
+  .mob-set-5 .wrapper-set-images-mob img {
+    max-height: 3.47vw;
+    max-width: 4.29vw;
+  }
   .wrapper-set-item-images.list .set-item-image {
     margin-right: 0.3vw;
     height: 20px;
@@ -4838,10 +4981,14 @@ header.after-box:not(.active):after {
     height: 6.12vw;
   }
   .error-page .error-image {
-    width: 45.92vw;
+    position: absolute;
+    bottom: 12vw;
   }
   header#error-page {
-    height: 100vh;
+    height: 100vh !important;
+  }
+  .error-page {
+    padding-bottom: 10vh;
   }
   header.header-bg.after-box .wrapper-cap-btn {
     left: 3vw;
@@ -4895,7 +5042,7 @@ header.after-box:not(.active):after {
   }
   .connect-box,
   .connect-box-bg {
-    width: 106%;
+    width: 18vw;
   }
   .connect-box .connect-button:before {
     width: 2.24vw;
@@ -4906,7 +5053,7 @@ header.after-box:not(.active):after {
     font-size: 1.4vw;
   }
   .connect-box {
-    padding: 2.45vw;
+    padding: 1vw;
   }
   .fancybox-content.fancybox-modal-box {
     max-width: 61.22vw;
@@ -4958,9 +5105,416 @@ header.after-box:not(.active):after {
   .wrapper-edit-delete button i {
     font-size: 1.3vw;
   }
+  .wrapper-mint-head {
+    padding-top: 7.5vw;
+  }
+  .Key-Information-section .cloud-5 {
+    width: initial !important;
+    height: 80% !important;
+    bottom: 20%;
+  }
 }
 
-.wrapper-mint-head {
-  padding-top: 7.5vw;
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header.header-startpage {
+    height: 100vh;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  header.header-basepage {
+    height: 90vh;
+    min-height: 90vh;
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header.header-startpage {
+    height: auto;
+    min-height: 55vh;
+    overflow-x: hidden;
+  }
+  header.header-basepage {
+    height: auto;
+    min-height: 50vh;
+    overflow-x: hidden;
+  }
+  header.header-basepage .cloud-third {
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .cap-section-menu {
+    display: none;
+  }
+  .header .logo {
+    width: 9.07vw;
+  }
+  .header .logo img {
+    width: 100%;
+  }
+  .header .content .base-width-content {
+    width: 90vw;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  #navigation {
+    width: auto;
+  }
+  #navigation .nav-point {
+    width: 1vw;
+    height: 1vw;
+  }
+  .header .wrapper-cap-btn .btn {
+    width: 47.73vw;
+    height: 11.73vw;
+    font-size: 4.2vw;
+  }
+  .header .wrapper-cap-section {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .header .wrapper-cap-btn {
+    margin: 0 auto;
+  }
+  .header-start-page-text div {
+    font-size: 12vw;
+  }
+  .header-start-page-text {
+    padding: 10vw 0;
+  }
+  .header-start-page-text img {
+    width: 12.27vw;
+    position: relative;
+    top: -4px;
+  }
+  .title-m {
+    font-size: 4.8vw;
+  }
+  .arrow {
+    width: 4.8vw;
+  }
+  .wrapper-super-nft {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .super-nft-images-box {
+    width: 100%;
+    position: relative;
+    overflow: initial;
+  }
+  .super-nft-images-box .image-back {
+    width: 100%;
+    margin: 0;
+  }
+  .super-nft-bottom img {
+    display: none;
+  }
+  .super-nft-text {
+    width: 100%;
+    padding-right: 0;
+    margin: 0;
+    padding: 10.67vw 5.33vw;
+  }
+  .super-nft-images-box .image-back img {
+    width: 89%;
+    margin-top: 0;
+    margin-bottom: -3vw;
+    overflow: inherit;
+  }
+  .super-nft-images-box .image-back:after {
+    content: "";
+    width: 5.6vw;
+    background: url(../img/image-5.png);
+    height: 24.27vw;
+    display: block;
+    position: absolute;
+    top: 48%;
+    right: 3vw;
+    background-size: 100%;
+  }
+  .super-nft-images-box .image-back {
+    border-bottom: 1px solid #67646d;
+  }
+  .super-nft-images-box:after {
+    content: "";
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    left: 0px;
+    border-bottom: 1px solid #67646d;
+    z-index: -1;
+  }
+  .super-nft-images-box .image-back picture:after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #67646d;
+    position: absolute;
+    bottom: 11.5vw;
+    left: 0px;
+    z-index: -1;
+  }
+  .super-nft-images-box .image-back picture {
+    position: relative;
+  }
+  .two-columns p,
+  .cap-wrapper-menu li a,
+  .wrapper-cap-btn .btn,
+  .super-nft-text p,
+  .base-link,
+  .title-s,
+  .tabs ul li,
+  p,
+  * {
+    font-size: 4vw;
+  }
+  p + .base-link {
+    margin-top: 4vw;
+  }
+  .super-nft-bottom {
+    display: none;
+  }
+  .title-s.mini-title {
+    font-size: 3vw;
+  }
+  .tabs ul li {
+    font-size: 3vw;
+  }
+  .title-l {
+    font-size: 1.8rem;
+    margin-bottom: 6vw;
+  }
+  .two-columns {
+    -webkit-column-width: initial;
+    column-width: initial;
+    -webkit-column-count: initial;
+    column-count: initial;
+    -webkit-column-gap: initial;
+    column-gap: initial;
+  }
+  .base-content .base-width-content {
+    width: 100%;
+  }
+  .collection-section .arrow {
+    display: none;
+  }
+  .wrapper-collection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrapper-collection .collection-item {
+    min-height: initial;
+    width: 100%;
+  }
+  .wrapper-collection .collection-item:not(:hover) .collection-min-info img {
+    display: none;
+  }
+  .wrapper-collection .collection-item.click .collection-min-info img {
+    display: block;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .wrapper-collection .collection-item {
+    padding: 5.33vw;
+    height: auto;
+  }
+  .collection-section .arrow {
+    display: none;
+  }
+  .wrapper-collection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrapper-collection .collection-name.title-m {
+    min-width: initial;
+    margin: 0;
+  }
+  .collection-name.title-m br {
+    display: none;
+  }
+  .title-xl {
+    font-size: 2.9rem;
+  }
+  .wrapper-collection .collection-item .collection-min-info {
+    width: 100%;
+  }
+  .wrapper-collection .collection-item:not(:first-child) {
+    border-left: 1px solid #67646D;
+    border-top: 0;
+  }
+  .wrapper-collection .collection-item:hover .collection-all-info,
+  .wrapper-collection .collection-item.click .collection-all-info {
+    width: 100%;
+    padding: 0;
+  }
+  .collection-item:hover,
+  .collection-item.click {
+    width: 100% !important;
+  }
+  .wrapper-collection .collection-item .collection-min-info img {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 100px !important;
+    z-index: 4;
+  }
+  .wrapper-collection .collection-item {
+    position: relative;
+  }
+  .collection-item:hover ~ .collection-item,
+  .collection-item.click ~ .collection-item {
+    width: 100% !important;
+    overflow: hidden;
+  }
+  .wrapper-collection:hover .collection-item {
+    width: 100% !important;
+  }
+  .wrapper-collection .collection-item .collection-min-info img {
+    position: absolute;
+    bottom: 1px;
+    right: 0px;
+    width: 43vw !important;
+    z-index: 4;
+    -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+    right: -12vw;
+  }
+  .wrapper-collection .collection-item .collection-summary {
+    width: 73%;
+  }
+  .wrapper-collection .collection-item:after {
+    content: "";
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 5.33vw;
+    height: 5.33vw;
+    background: url(../img/arrow.svg);
+    position: absolute;
+    top: 5.33vw;
+    right: 5.33vw;
+    opacity: 0.5;
+  }
+  .wrapper-collection .collection-item.click:after {
+    -webkit-transform: scale(1, -1);
+            transform: scale(1, -1);
+  }
+  .wrapper-collection .collection-item .collection-min-info {
+    width: 100% !important;
+  }
+  .wrapper-collection .collection-item.click .collection-all-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .collection-item:not(.click) .collection-all-info {
+    display: none !important;
+  }
+  .collection-item:not(.click) {
+    border-color: #67646D !important;
+  }
+  .wrapper-collection .collection-item:hover:not(.click) {
+    border-image-source: initial !important;
+    border-image-slice: initial !important;
+    border-color: #67646D !important;
+  }
+  .wrapper-collection .collection-item:not(.click) .collection-min-info img {
+    display: none;
+  }
+  .wrapper-nft-item {
+    width: 100%;
+    margin-bottom: 10.67vw;
+  }
+  .wrapper-nft-item img {
+    width: 18.67vw;
+    margin-right: 4.53vw;
+    height: 18.67vw;
+  }
+  .wrapper-nft-item .nft-number,
+  .wrapper-nft-item .nft-date {
+    font-size: 2.9vw;
+  }
+  .wrapper-nft-item .nft-price {
+    font-size: 4vw;
+  }
+  .wrapper-nft-item .nft-number i {
+    vertical-align: baseline;
+    font-size: 3vw;
+  }
+  .roadmap-item:before {
+    content: "";
+    width: 4.27vw;
+    height: 8.27vw;
+    position: initial;
+  }
+  .roadmap-item .date {
+    position: initial;
+    top: 0px;
+    left: 0;
+    margin: 3vw 0 2.67vw;
+  }
+  .roadmap-item .year {
+    font-size: 4vw;
+    margin-top: 6vw;
+  }
+  .roadmap-item {
+    width: 73vw;
+    padding: 0;
+    padding-right: 6vw;
+  }
+  .roadmap-slider {
+    margin-top: 0;
+  }
+  .roadmap-item.section-3,
+  .roadmap-item.section-2 {
+    -webkit-column-width: initial;
+    column-width: initial;
+    -webkit-column-count: initial;
+    column-count: initial;
+    -webkit-column-gap: initial;
+    column-gap: initial;
+    width: 73vw;
+  }
+  .m-top-180 {
+    margin-top: 26.67vw;
+  }
+  .wrapper-slider-news-item {
+    padding: 7.47vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .wrapper-slider-news-item img {
+    width: 18.67vw;
+  }
+  .wrapper-slider-news-item .news-name {
+    width: 100%;
+    padding: 0;
+    margin: 4.27vw 0;
+  }
+  .wrapper-slider-news-item .news-name br {
+    display: none;
+  }
+  .wrapper-slider-news-item .news-description {
+    width: 100%;
+  }
+  .wrapper-slider-news-item .news-description p,
+  .wrapper-slider-news-item .news-description .date {
+    font-size: 2.9vw;
+  }
+  .wrapper-slider-news-item .news-description .date {
+    margin-top: 1rem;
+  }
+  .base-slider .owl-nav button img {
+    width: 5.33vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */

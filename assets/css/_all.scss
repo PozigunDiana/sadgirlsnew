@@ -187,10 +187,10 @@ header {
     font-weight: 100;
     line-height: 95%;
     .header-text-first {
-        font-size: 6.94vw;
-        font-family: 'Migra';
-        font-weight: 100;
-        line-height: 95%;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: inherit;
+        line-height: inherit;
         background: url(../img/text-background.png) no-repeat center/cover;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -229,6 +229,10 @@ header {
     }
 }
 
+.header-text.header-text-mini {
+    font-size: 5vw;
+}
+
 .header-bottom-box {
     width: 100%;
     -ms-flex-item-align: end;
@@ -243,7 +247,7 @@ header {
 .cloud-second,
 .cloud-third {
     position: absolute;
-    z-index: 0;
+    z-index: 1;
 }
 
 .cloud-first {
@@ -252,7 +256,7 @@ header {
 }
 
 .cloud-second {
-    top: -12%;
+    top: -10vw;
     right: 16vw;
     transform: rotate(-180deg);
 }
@@ -260,7 +264,11 @@ header {
 .cloud-third {
     transform: rotate(-180deg);
     top: 15vw;
-    right: -18vw;
+    right: 0px;
+    img {
+        left: -13vw;
+        position: relative;
+    }
 }
 
 .super-nft-images-box {
@@ -417,7 +425,7 @@ p {
         align-items: stretch;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        min-height: 32vw;
+        height: 30vw;
         .collection-min-info {
             height: 100%;
             display: -webkit-box;
@@ -459,28 +467,33 @@ p {
                     align-self: flex-start;
                 }
             }
-            p {
-                color: $grey;
-                overflow: hidden;
-                display: -webkit-box;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;
-            }
-            .collection-summary {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-align: start;
-                -ms-flex-align: start;
-                align-items: flex-start;
-                -webkit-box-pack: start;
-                -ms-flex-pack: start;
-                justify-content: flex-start;
-                -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
-                -ms-flex-item-align: end;
-                align-self: flex-end;
-            }
+        }
+        .collection-all-info>p {
+            margin: 30px 0;
+            -ms-flex-item-align: start;
+            align-self: flex-start;
+        }
+        p {
+            color: $grey;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+        .collection-summary {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -ms-flex-item-align: end;
+            align-self: flex-end;
         }
         .collection-all-info {
             padding: 0;
@@ -1276,15 +1289,21 @@ p {
         &.active {
             border-top: 1px solid;
             border-image-source: url(../img/text-background.png);
+            background-size: cover;
             border-image-slice: 1;
+            border-bottom: 0px !important;
+            border-right: 0px !important;
+            border-left: 0px !important;
             &:after {
                 background: url(../img/Arrow_up.svg);
+                background-size: cover;
             }
         }
         &:after {
             content: "";
             display: block;
             background: url(../img/Arrow_down.svg);
+            background-size: cover;
             width: 1.25vw;
             height: 1.25vw;
             position: absolute;
@@ -1316,7 +1335,7 @@ p {
 }
 
 .m-top-130 {
-    margin-top: 130px;
+    margin-top: 9vw;
 }
 
 .content {
@@ -1454,6 +1473,23 @@ footer {
         font-size: 2.75vw;
         font-family: 'Migra';
         margin: 1vw 0 0.5vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        a {
+            line-height: 100%;
+            margin-right: 1vw;
+            border: 1px solid;
+            border-radius: 100%;
+            width: 3vw;
+            height: 3vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        a:hover {
+            opacity: 0.5;
+        }
     }
     p {
         color: $grey;
@@ -1464,6 +1500,20 @@ footer {
     img {
         height: 6.74vw;
     }
+}
+
+.set-item .name:empty {
+    background: #000;
+    width: 100% !important;
+    height: 6vw;
+    bottom: 0;
+}
+
+.wrapper-Glam-Backett-box .name a,
+.wrapper-Glam-Backett-box .name a i {
+    background: initial;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
 }
 
 .wrapper-Glam-Backett-box {
@@ -2038,7 +2088,6 @@ header.active {
     align-self: flex-end;
     position: relative;
     width: 100%;
-    margin-bottom: 13vw;
 }
 
 .wrapper-super-nft-images-section {
@@ -2185,12 +2234,20 @@ header {
         left: 0px;
         border-top: 2px solid #fff;
         border-left: 2px solid #fff;
+        border-image-source: url(../img/text-background.png);
+        border-image-slice: 2;
+        border-bottom: 0px !important;
+        border-right: 0px !important;
     }
     &:after {
         top: 50px;
         right: 30px;
         border-top: 2px solid #fff;
         border-right: 2px solid #fff;
+        border-image-source: url(../img/text-background.png);
+        border-image-slice: 2;
+        border-left: 0px !important;
+        border-bottom: 0px !important;
     }
 }
 
@@ -2249,8 +2306,6 @@ header {
     width: 2.57vw;
     height: 2.57vw;
     display: block;
-    border-image-source: url(../img/text-background.png);
-    border-image-slice: 2;
     z-index: 1;
     opacity: 0;
 }
@@ -2268,12 +2323,20 @@ header {
         left: 0px;
         border-left: 2px solid #fff;
         border-bottom: 2px solid #fff;
+        border-image-source: url(../img/text-background.png);
+        border-image-slice: 2;
+        border-right: 0px !important;
+        border-top: 0px !important;
     }
     &:after {
         bottom: -15px;
         right: 30px;
         border-right: 2px solid #fff;
         border-bottom: 2px solid #fff;
+        border-image-source: url(../img/text-background.png);
+        border-image-slice: 2;
+        border-left: 0px !important;
+        border-top: 0px !important;
     }
 }
 
@@ -2541,8 +2604,13 @@ header {
 }
 
 .slider-sets .owl-nav,
-.slider-sets+.counter-2 {
-    margin-left: 29vw;
+.slider-sets+.counter-3 {
+    width: 57vw;
+    float: right;
+}
+
+.slider-sets {
+    overflow: hidden;
 }
 
 .slider-team .owl-nav,
@@ -2600,7 +2668,8 @@ header {
     .btn {
         position: relative;
         z-index: 99;
-        &:hover {
+        &:hover,
+        &:focus {
             .connect-box-bg {
                 z-index: 10;
                 visibility: visible;
@@ -3546,6 +3615,7 @@ header {
     bottom: -9vw;
     right: 27vw;
     width: 13.89vw;
+    z-index: 99;
     img {
         display: block;
         width: 100%;
@@ -3734,4 +3804,26 @@ header.after-box:not(.active):after {
 
 .mint-header {
     position: relative;
+}
+
+.title-xl+.center {
+    width: 100%;
+    margin-bottom: 2vw;
+}
+
+.base-grey-color *,
+.base-grey-color {
+    color: #67646D;
+}
+
+.title-l+.base-grey-color {
+    margin-top: -2vw;
+}
+
+.title-xl+.base-grey-color {
+    margin-top: -2vw;
+}
+
+header.header-basepage.super-nft-header {
+    margin-bottom: 16vw;
 }

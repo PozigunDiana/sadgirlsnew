@@ -1,14 +1,38 @@
-@media all and (max-width:980px) {
+@media only screen and (max-width:1200px) {
+    header.header-basepage.super-nft-header {
+        margin-bottom: 9vw;
+    }
+}
+
+@media only screen and (max-width:1100px) {
     * {
         font-size: 1.65vw;
     }
     p {
         font-size: 1.65vw;
     }
-    header.header-startpage {
-        height: auto;
-        min-height: 91vh;
-        overflow-x: hidden;
+    .cloud-first,
+    .cloud-second,
+    .cloud-third {
+        zoom: 0.8;
+    }
+    header .cloud-second {
+        display: none;
+    }
+    header.header-basepage.super-nft-header .cloud-6 {
+        display: none;
+    }
+    .surep-ntl-title-section .cloud-5 {
+        display: none;
+    }
+    .cloud-third {
+        top: 15vw;
+        right: 0px;
+        img {
+            left: 0px;
+            position: relative;
+            width: 100%;
+        }
     }
     .super-nft-section {
         margin-top: 0;
@@ -42,10 +66,11 @@
     }
     body.ov-hidden {
         position: fixed;
+        width: 100%;
         overflow: hidden;
     }
     .header-start-page-text div {
-        font-size: 6.5vw;
+        font-size: 7vw;
     }
     .two-columns p,
     .cap-wrapper-menu li a,
@@ -231,9 +256,8 @@
     .header-text {
         font-size: 6.5vw;
     }
-    header.header-basepage {
-        min-height: 65vh;
-        height: auto;
+    header.header-basepage.active {
+        height: 100vh;
     }
     .opensea-link {
         bottom: 0vw;
@@ -340,6 +364,10 @@
         max-height: 3.47vw;
         max-width: 4.29vw;
     }
+    .mob-set-5 .wrapper-set-images-mob img {
+        max-height: 3.47vw;
+        max-width: 4.29vw;
+    }
     .wrapper-set-item-images.list .set-item-image {
         margin-right: 0.3vw;
         height: 20px;
@@ -407,10 +435,14 @@
         height: 6.12vw;
     }
     .error-page .error-image {
-        width: 45.92vw;
+        position: absolute;
+        bottom: 12vw;
     }
     header#error-page {
-        height: 100vh;
+        height: 100vh !important;
+    }
+    .error-page {
+        padding-bottom: 10vh;
     }
     header.header-bg.after-box .wrapper-cap-btn {
         left: 3vw;
@@ -466,7 +498,7 @@
     }
     .connect-box,
     .connect-box-bg {
-        width: 106%;
+        width: 18vw;
     }
     .connect-box .connect-button:before {
         width: 2.24vw;
@@ -477,7 +509,7 @@
         font-size: 1.4vw;
     }
     .connect-box {
-        padding: 2.45vw;
+        padding: 1vw;
     }
     .fancybox-content.fancybox-modal-box {
         max-width: 61.22vw;
@@ -529,8 +561,41 @@
             }
         }
     }
+    .wrapper-mint-head {
+        padding-top: 7.5vw;
+    }
+    .Key-Information-section .cloud-5 {
+        width: initial !important;
+        height: 80% !important;
+        bottom: 20%;
+    }
 }
 
-.wrapper-mint-head {
-    padding-top: 7.5vw;
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    header.header-startpage {
+        height: 100vh;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+    header.header-basepage {
+        height: 90vh;
+        min-height: 90vh;
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    header.header-startpage {
+        height: auto;
+        min-height: 55vh;
+        overflow-x: hidden;
+    }
+    header.header-basepage {
+        height: auto;
+        min-height: 50vh;
+        overflow-x: hidden;
+    }
+    header.header-basepage .cloud-third {
+        width: 55%;
+    }
 }

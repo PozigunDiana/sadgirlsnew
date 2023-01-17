@@ -1,0 +1,365 @@
+@media only screen and (max-width:500px) {
+    .cap-section-menu {
+        display: none;
+    }
+    .header .logo {
+        width: 9.07vw;
+        img {
+            width: 100%;
+        }
+    }
+    .header .content .base-width-content {
+        width: 90vw;
+        align-items: baseline;
+    }
+    #navigation {
+        width: auto;
+        .nav-point {
+            width: 1vw;
+            height: 1vw;
+        }
+    }
+    .header .wrapper-cap-btn .btn {
+        width: 47.73vw;
+        height: 11.73vw;
+        font-size: 4.2vw;
+    }
+    .header .wrapper-cap-section {
+        flex-wrap: nowrap;
+    }
+    .header .wrapper-cap-btn {
+        margin: 0 auto;
+    }
+    .header-start-page-text div {
+        font-size: 12vw;
+    }
+    .header-start-page-text {
+        padding: 10vw 0;
+    }
+    .header-start-page-text img {
+        width: 12.27vw;
+        position: relative;
+        top: -4px;
+    }
+    .title-m {
+        font-size: 4.8vw;
+    }
+    .arrow {
+        width: 4.8vw;
+    }
+    .wrapper-super-nft {
+        flex-direction: column;
+    }
+    .super-nft-images-box {
+        width: 100%;
+        position: relative;
+        overflow: initial;
+    }
+    .super-nft-images-box .image-back {
+        width: 100%;
+        margin: 0;
+    }
+    .super-nft-bottom img {
+        display: none;
+    }
+    .super-nft-text {
+        width: 100%;
+        padding-right: 0;
+        margin: 0;
+        padding: 10.67vw 5.33vw;
+    }
+    .super-nft-images-box .image-back img {
+        width: 89%;
+        margin-top: 0;
+        margin-bottom: -3vw;
+        overflow: inherit;
+    }
+    .super-nft-images-box .image-back:after {
+        content: "";
+        width: 5.6vw;
+        background: url(../img/image-5.png);
+        height: 24.27vw;
+        display: block;
+        position: absolute;
+        top: 48%;
+        right: 3vw;
+        background-size: 100%;
+    }
+    .super-nft-images-box .image-back {
+        border-bottom: 1px solid #67646d;
+    }
+    .super-nft-images-box:after {
+        content: "";
+        position: absolute;
+        bottom: 5%;
+        width: 100%;
+        left: 0px;
+        border-bottom: 1px solid #67646d;
+        z-index: -1;
+    }
+    .super-nft-images-box .image-back picture:after {
+        content: "";
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #67646d;
+        position: absolute;
+        bottom: 11.5vw;
+        left: 0px;
+        z-index: -1;
+    }
+    .super-nft-images-box .image-back picture {
+        position: relative;
+    }
+    .two-columns p,
+    .cap-wrapper-menu li a,
+    .wrapper-cap-btn .btn,
+    .super-nft-text p,
+    .base-link,
+    .title-s,
+    .tabs ul li,
+    p,
+    * {
+        // font-size: 16px;
+        font-size: 4vw;
+    }
+    p+.base-link {
+        margin-top: 4vw;
+    }
+    .super-nft-bottom {
+        display: none;
+    }
+    .title-s.mini-title {
+        // font-size: 12px;
+        font-size: 3vw;
+    }
+    .tabs ul li {
+        // font-size: 12px;
+        font-size: 3vw;
+    }
+    .title-l {
+        // font-size: 32px;
+        font-size: 1.8rem;
+        margin-bottom: 6vw;
+    }
+    .two-columns {
+        -webkit-column-width: initial;
+        column-width: initial;
+        -webkit-column-count: initial;
+        column-count: initial;
+        -webkit-column-gap: initial;
+        column-gap: initial;
+    }
+    .base-content .base-width-content {
+        width: 100%;
+    }
+    .collection-section .arrow {
+        display: none;
+    }
+    .wrapper-collection {
+        flex-direction: column;
+    }
+    .wrapper-collection .collection-item {
+        min-height: initial;
+        width: 100%;
+    }
+    .wrapper-collection .collection-item:not(:hover) .collection-min-info img {
+        display: none;
+    }
+    .wrapper-collection .collection-item.click .collection-min-info img {
+        display: block;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+    .wrapper-collection .collection-item {
+        padding: 5.33vw;
+        height: auto;
+    }
+    .collection-section .arrow {
+        display: none;
+    }
+    .wrapper-collection {
+        flex-direction: column;
+    }
+    .wrapper-collection .collection-name.title-m {
+        min-width: initial;
+        margin: 0;
+    }
+    .collection-name.title-m br {
+        display: none;
+    }
+    .title-xl {
+        // font-size: 52px;
+        font-size: 2.9rem;
+    }
+    .wrapper-collection .collection-item .collection-min-info {
+        width: 100%;
+    }
+    .wrapper-collection .collection-item:not(:first-child) {
+        border-left: 1px solid #67646D;
+        border-top: 0;
+    }
+    .wrapper-collection .collection-item:hover .collection-all-info,
+    .wrapper-collection .collection-item.click .collection-all-info {
+        width: 100%;
+        padding: 0;
+    }
+    .collection-item:hover,
+    .collection-item.click {
+        width: 100% !important;
+    }
+    .wrapper-collection .collection-item .collection-min-info img {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        width: 100px !important;
+        z-index: 4;
+    }
+    .wrapper-collection .collection-item {
+        position: relative;
+    }
+    .collection-item:hover~.collection-item,
+    .collection-item.click~.collection-item {
+        width: 100% !important;
+        overflow: hidden;
+    }
+    .wrapper-collection:hover .collection-item {
+        width: 100% !important;
+    }
+    .wrapper-collection .collection-item .collection-min-info img {
+        position: absolute;
+        bottom: 1px;
+        right: 0px;
+        width: 43vw !important;
+        z-index: 4;
+        transform: scale(-1, 1);
+        right: -12vw;
+    }
+    .wrapper-collection .collection-item .collection-summary {
+        width: 73%;
+    }
+    .wrapper-collection .collection-item:after {
+        content: "";
+        display: inline-flex;
+        width: 5.33vw;
+        height: 5.33vw;
+        background: url(../img/arrow.svg);
+        position: absolute;
+        top: 5.33vw;
+        right: 5.33vw;
+        opacity: 0.5;
+    }
+    .wrapper-collection .collection-item.click:after {
+        transform: scale(1, -1)
+    }
+    .wrapper-collection .collection-item .collection-min-info {
+        width: 100% !important;
+    }
+    .wrapper-collection .collection-item.click .collection-all-info {
+        display: flex;
+    }
+    .collection-item:not(.click) .collection-all-info {
+        display: none !important;
+    }
+    .collection-item:not(.click) {
+        border-color: #67646D !important;
+    }
+    .wrapper-collection .collection-item:hover:not(.click) {
+        border-image-source: initial !important;
+        border-image-slice: initial !important;
+        border-color: #67646D !important;
+    }
+    .wrapper-collection .collection-item:not(.click) .collection-min-info img {
+        display: none;
+    }
+    .wrapper-nft-item {
+        width: 100%;
+        margin-bottom: 10.67vw;
+        img {
+            width: 18.67vw;
+            margin-right: 4.53vw;
+            height: 18.67vw;
+        }
+        .nft-number,
+        .nft-date {
+            // font-size: 14px;
+            font-size: 2.9vw;
+        }
+        .nft-price {
+            // font-size: 16px;
+            font-size: 4vw;
+        }
+        .nft-number i {
+            vertical-align: baseline;
+            font-size: 3vw;
+        }
+    }
+    .roadmap-item:before {
+        content: "";
+        width: 4.27vw;
+        height: 8.27vw;
+        position: initial;
+    }
+    .roadmap-item {
+        .date {
+            position: initial;
+            top: 0px;
+            left: 0;
+            margin: 3vw 0 2.67vw;
+        }
+        .year {
+            // font-size: 16px;
+            font-size: 4vw;
+            margin-top: 6vw;
+        }
+    }
+    .roadmap-item {
+        width: 73vw;
+        padding: 0;
+        padding-right: 6vw;
+    }
+    .roadmap-slider {
+        margin-top: 0;
+    }
+    .roadmap-item.section-3,
+    .roadmap-item.section-2 {
+        -webkit-column-width: initial;
+        column-width: initial;
+        -webkit-column-count: initial;
+        column-count: initial;
+        -webkit-column-gap: initial;
+        column-gap: initial;
+        width: 73vw;
+    }
+    .m-top-180 {
+        margin-top: 26.67vw;
+    }
+    .wrapper-slider-news-item {
+        padding: 7.47vw;
+        flex-wrap: wrap;
+    }
+    .wrapper-slider-news-item img {
+        width: 18.67vw;
+    }
+    .wrapper-slider-news-item .news-name {
+        width: 100%;
+        padding: 0;
+        margin: 4.27vw 0;
+    }
+    .wrapper-slider-news-item .news-name br {
+        display: none;
+    }
+    .wrapper-slider-news-item .news-description {
+        width: 100%;
+    }
+    .wrapper-slider-news-item .news-description p,
+    .wrapper-slider-news-item .news-description .date {
+        // font-size: 14px;
+        font-size: 2.9vw;
+    }
+    .wrapper-slider-news-item .news-description .date {
+        margin-top: 1rem;
+    }
+    .base-slider .owl-nav button img {
+        width: 5.33vw;
+    }
+}
