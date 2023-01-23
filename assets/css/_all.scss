@@ -265,9 +265,12 @@ header {
     transform: rotate(-180deg);
     top: 15vw;
     right: 0px;
+    width: 41vw;
     img {
         left: -13vw;
         position: relative;
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -654,6 +657,10 @@ p {
     .nft-number {
         color: $grey;
         font-size: 0.97vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0 0.5vw;
         i {
             width: 1.1vw;
             color: $grey;
@@ -661,7 +668,7 @@ p {
         }
     }
     .nft-price {
-        margin: 1.22vw 0 2.76vw;
+        margin: 1vw 0 1.3vw;
     }
     .nft-date {
         color: $grey;
@@ -1502,13 +1509,6 @@ footer {
     }
 }
 
-.set-item .name:empty {
-    background: #000;
-    width: 100% !important;
-    height: 6vw;
-    bottom: 0;
-}
-
 .wrapper-Glam-Backett-box .name a,
 .wrapper-Glam-Backett-box .name a i {
     background: initial;
@@ -1536,7 +1536,7 @@ footer {
     .signature-image {
         width: 15.63vw;
     }
-    .name {
+    .name span {
         background: url(../img/text-background.png) no-repeat center/cover;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -1856,7 +1856,7 @@ header.active {
     width: 300%;
     height: 500%;
     background: url(../img/ellipse-2.png) center;
-    background-size: 90%;
+    background-size: contain;
     -webkit-transform: translateY(-50%) translateX(-50%);
     transform: translateY(-50%) translateX(-50%);
     position: absolute;
@@ -1887,6 +1887,7 @@ header.active {
     img {
         margin: 1.39vw;
         width: 13.26vw;
+        height: 13.26vw;
     }
 }
 
@@ -2971,6 +2972,9 @@ header {
 }
 
 .wrapper-buttons {
+    position: absolute;
+    top: 0;
+    right: 0px;
     .btn {
         width: 16.39vw;
         height: 3.06vw;
@@ -2982,6 +2986,7 @@ header {
 
 .wrapper-for-h1 {
     margin-bottom: 1.94vw;
+    padding-top: 0.5vw;
     h1 {
         font-family: 'Migra';
         text-transform: uppercase;
@@ -3306,7 +3311,7 @@ header {
             left: calc(50% - 0.69vw);
         }
         &:after {
-            left: 36%;
+            left: calc(50% - 0.69vw);
             position: absolute;
             top: 49%;
             transform: rotate(-90deg);
@@ -3338,6 +3343,41 @@ header {
     * {
         color: $grey;
     }
+}
+
+.base-btn {
+    border: 1px solid #333333;
+    border-radius: 8px;
+    width: 100%;
+    background: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    color: #333333;
+    height: 4.17vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    &:hover {
+        background: #fff;
+        color: #000;
+    }
+}
+
+.wrapper-modal-btn {
+    margin-top: 2vw;
+    width: 100%;
+    align-items: stretch;
+    button {
+        width: 49%;
+        height: 4.17vw;
+    }
+}
+
+.white-btn {
+    color: #000;
 }
 
 .quantity-box {
@@ -3422,27 +3462,27 @@ header {
         max-width: 55.56vw;
         padding: 6.25vw 0;
         width: 100%;
-        button {
-            &.fancybox-button {
-                &.fancybox-close-small {
-                    background: url(../img/close.svg);
-                    background-size: 100%;
-                    width: 3.26vw !important;
-                    height: 0.90vw !important;
-                    top: 1.67vw;
-                    right: 1.67vw;
-                    transition: $basetransitiontime;
-                    &:hover {
-                        opacity: 0.5;
-                    }
-                    svg {
-                        display: none !important;
-                    }
+    }
+    button {
+        &.fancybox-button {
+            &.fancybox-close-small {
+                background: url(../img/close.svg);
+                background-size: 100%;
+                width: 3.26vw !important;
+                height: 0.90vw !important;
+                top: 1.67vw;
+                right: 1.67vw;
+                transition: $basetransitiontime;
+                &:hover {
+                    opacity: 0.5;
                 }
-                &.close-btn {
-                    img {
-                        width: 100%;
-                    }
+                svg {
+                    display: none !important;
+                }
+            }
+            &.close-btn {
+                img {
+                    width: 100%;
                 }
             }
         }
@@ -3826,4 +3866,8 @@ header.after-box:not(.active):after {
 
 header.header-basepage.super-nft-header {
     margin-bottom: 16vw;
+}
+
+header.header-bg.after-box.active {
+    min-height: 100vh;
 }

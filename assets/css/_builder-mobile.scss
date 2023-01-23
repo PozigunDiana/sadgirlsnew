@@ -1,0 +1,318 @@
+@media only all and (min-width:501px) {
+    .basket-icon {
+        display: none;
+    }
+    .builder-footer .wrapper-help-info {
+        display: none;
+    }
+}
+
+@media only all and (max-width:500px) {
+     :root {
+        --dink: 1.5vw;
+    }
+    .builder-section {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .wrapper-allheight {
+        flex-direction: column;
+    }
+    .builder-section:after,
+    header.after-box:not(.active):after {
+        display: none;
+    }
+    .builder-base-section,
+    .sets-sidebar {
+        width: 100%;
+        height: auto;
+    }
+    .wrapper-for-h1 h1 {
+        max-width: initial;
+        font-size: 7vw;
+        margin-bottom: 5vw;
+    }
+    .builder-main-content .wrapper-buttons .btn {
+        width: 48%;
+        height: 11.73vw;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .collection-part {
+        flex-direction: column;
+    }
+    .collection-part-name {
+        font-size: 3.7vw;
+        padding: 4vw 0;
+    }
+    .wrapper-buttons {
+        position: initial;
+        width: 100%;
+    }
+    .wrapper-buttons .btn {
+        width: 48%;
+        height: 11.73vw;
+        margin-top: 8vw;
+    }
+    .nft-item {
+        width: 22.4vw;
+        min-height: 27.73vw;
+        min-width: 22.4vw;
+        margin-right: 2vw;
+        padding-top: 1vw;
+    }
+    .nft-item .checked-info {
+        top: 1vw;
+    }
+    .nft-item .checked-info,
+    .nft-item img {
+        height: 18.13vw;
+        width: 18.13vw;
+        margin: 0px;
+    }
+    .wrapper-nft-items-section,
+    .nft-items-section-bg {
+        width: 100%;
+    }
+    .nft-item-id {
+        font-size: 3.7vw;
+    }
+    .nft-item.checked span {
+        font-size: 3.7vw;
+    }
+    .btn-maxi {
+        height: 16vw;
+    }
+    .fancybox-modal-box .modal-title {
+        font-size: 6vw;
+    }
+    .fancybox-modal-box .modal-box,
+    .fancybox-modal-box .modal-box.modal-box-maxi {
+        max-width: 68vw;
+    }
+    .fancybox-content.fancybox-modal-box {
+        max-width: 89.33vw;
+    }
+    .fancybox-modal-box .modal-box p,
+    .fancybox-modal-box .modal-box.modal-box-maxi p {
+        font-size: 3.7vw;
+        margin: 4vw 0;
+    }
+    .wrapper-modal-box-form button.btn {
+        width: 100%;
+    }
+    .modal-box-bg .btn {
+        height: 11.73vw;
+    }
+    .modal-box-bg {
+        padding: 10vw 0;
+    }
+    .fancybox-content {
+        button {
+            &.fancybox-button {
+                &.fancybox-close-small {
+                    width: 12.8vw !important;
+                    top: 4vw;
+                    right: 4vw;
+                }
+            }
+        }
+    }
+    .builder-footer {
+        margin-top: 6vw;
+    }
+    .connect-box .log-out {
+        margin-top: 4vw;
+    }
+    .connect-box .total-price img {
+        width: 2.67vw;
+        margin-right: 1vw;
+    }
+    .connect-box .title {
+        font-size: 3.7vw;
+        margin-bottom: 2vw;
+        margin-top: 3vw;
+    }
+    .connect-box .connect-button:before {
+        min-width: 4vw;
+        min-height: 5.87vw;
+        margin-right: 1vw;
+        max-width: initial;
+    }
+    .connect-box .connect-button {
+        font-size: 3.7vw;
+    }
+    .quantity-box {
+        width: 10vw;
+        height: 10vw;
+        margin: 0 2vw 0 3vw;
+    }
+    .quantity-box .button {
+        width: 3vw;
+        height: 3vw;
+        background-size: 100%;
+    }
+    .wrapper-total-price img {
+        margin-right: 1vw;
+        width: 3vw;
+    }
+    .wrapper-modal-box-form input {
+        width: 100%;
+        height: 13.33vw;
+        margin-bottom: 3vw;
+    }
+    .modal-box-bg .btn {
+        height: 11.73vw;
+    }
+    [tooltip]::after {
+        content: attr(tooltip);
+        min-width: 20vw;
+        max-width: 45vw;
+        padding: 3vw;
+        width: 37vw;
+    }
+    [tooltip]::before,
+    [tooltip]::after {
+        font-size: 3vw;
+        line-height: 120%;
+    }
+    .collection-part.tooltip[tooltip][flow="right"]::after {
+        top: 50%;
+        left: calc(26vw + var(--dink));
+        transform: translate(-0.5em, -50%);
+    }
+    .collection-part.tooltip[tooltip][flow="right"]::before {
+        right: initial;
+        left: 26.2vw;
+    }
+    .help p {
+        display: initial;
+    }
+    .help span {
+        width: 4vw;
+        height: 4vw;
+        font-size: 2vw;
+        margin-right: 2vw;
+    }
+    .basket-icon {
+        background: #292929;
+        border: 1px solid #FBF9FF;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 16vw;
+        height: 16vw;
+        border-radius: 50%;
+        cursor: pointer;
+        margin: 0 10px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        position: fixed;
+        bottom: 14vw;
+        right: 4vw;
+        z-index: 99;
+    }
+    #my-sets-box {
+        display: none;
+    }
+    .sets-sidebar.fancybox-content#my-sets-box {
+        background: #000000;
+        padding: 15vw 4vw 10vw;
+        .wrapper-mint-head .title {
+            font-size: 4.7vw;
+        }
+        .wrapper-mint-head {
+            margin-bottom: 5vw;
+        }
+    }
+    .wrapper-total-section .total-price {
+        font-size: 4.5vw;
+    }
+    .mint-btn {
+        height: 16vw;
+        font-size: 4.7vw;
+        margin: 4vw 0;
+    }
+    .fancybox-container .wrapper-help-info {
+        display: none;
+    }
+    .checked-nft-section .wrapper-checked-nft p {
+        width: initial;
+        max-width: initial;
+    }
+    .wrapper-checked-nft .wrapper-total-price {
+        width: 30%;
+        justify-content: flex-end;
+    }
+    .checked-nft-section .wrapper-checked-nft-images {
+        width: 100%;
+    }
+    .checked-nft-section .checked-nft {
+        padding: 3.2vw;
+        margin-bottom: 3vw;
+    }
+    .checked-nft-section .wrapper-checked-nft p {
+        width: 70%;
+        max-width: initial;
+    }
+    .checked-nft-section .wrapper-checked-nft-images {
+        width: 100%;
+        margin-top: 3vw;
+        justify-content: flex-start;
+        gap: 2.13vw;
+    }
+    .wrapper-total-price img {
+        width: 2.67vw;
+        margin-right: 2vw;
+    }
+    .checked-nft-section .wrapper-checked-nft-images .checked-nft-item-image {
+        margin-right: 0.49vw;
+        width: 12.27vw;
+        height: 12.27vw;
+    }
+    .checked-nft-section {
+        max-height: initial;
+    }
+    .wrapper-edit-delete button {
+        width: 6.4vw;
+        height: 6.4vw;
+        margin: 0px;
+    }
+    .wrapper-edit-delete button i {
+        font-size: 3vw;
+    }
+    .wrapper-edit-delete {
+        bottom: 3vw;
+    }
+    .wrapper-edit-delete {
+        gap: 2vw;
+        margin-right: 3vw;
+    }
+    .wrapper-total-section .total-price img {
+        width: 2.67vw;
+        margin-right: 2vw;
+    }
+    .builder-footer .wrapper-help-info {
+        margin-top: 8vw;
+    }
+    .mint-header .close-box {
+        display: none;
+    }
+    .release-box .title {
+        font-size: 3.7vw;
+        margin: 3vw 0;
+    }
+    .checked-nft-section .checked-nft .date {
+        bottom: 14vw;
+        font-size: 2.7vw;
+        right: 3vw;
+    }
+    .wrapper-modal-btn button {
+        height: 11.73vw;
+    }
+}

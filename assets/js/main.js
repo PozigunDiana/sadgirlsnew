@@ -92,11 +92,12 @@ $('.slider-nft-item').owlCarousel({
     loop: false,
     nav: false,
     items: 5,
+
     responsive: {
         0: {
-            items: 1
+            items: 4
         },
-        600: {
+        501: {
             margin: 10
         },
         981: {
@@ -166,7 +167,7 @@ owl.owlCarousel({
         0: {
             items: 1
         },
-        600: {
+        500: {
             items: 2
         },
         981: {
@@ -183,8 +184,6 @@ owl.on('changed.owl.carousel', function(e) {
 });
 
 
-
-
 var owl = $('.slider-sets');
 owl.owlCarousel({
     loop: false,
@@ -192,6 +191,11 @@ owl.owlCarousel({
     dotsEach: true,
     responsive: {
         0: {
+            margin: 10,
+            items: 1
+        },
+        501: {
+            items: 3,
             margin: 10
         },
         981: {

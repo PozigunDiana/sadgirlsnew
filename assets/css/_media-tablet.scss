@@ -1,6 +1,33 @@
-@media only screen and (max-width:1200px) {
+@media (max-width:1024px) {
+    .follow-cursor {
+        display: none;
+    }
+}
+
+@media only screen and (min-device-width: 767px) and (max-device-width: 1300px) {
     header.header-basepage.super-nft-header {
         margin-bottom: 9vw;
+    }
+    header.header-basepage {
+        height: auto;
+        min-height: 70vh;
+    }
+    .follow-cursor {
+        display: none;
+    }
+    .opensea-link {
+        bottom: -3vw;
+    }
+    header.active #navigation-box {
+        height: 100vw;
+        min-height: 100vw;
+    }
+    header.header-basepage.active {
+        min-height: 100vh;
+        height: 100vh;
+    }
+    .cloud-third {
+        overflow-x: auto;
     }
 }
 
@@ -10,11 +37,6 @@
     }
     p {
         font-size: 1.65vw;
-    }
-    .cloud-first,
-    .cloud-second,
-    .cloud-third {
-        zoom: 0.8;
     }
     header .cloud-second {
         display: none;
@@ -257,7 +279,9 @@
         font-size: 6.5vw;
     }
     header.header-basepage.active {
-        height: 100vh;
+        min-height: 100vw;
+        margin-bottom: 0;
+        height: 100vh !important;
     }
     .opensea-link {
         bottom: 0vw;
@@ -265,6 +289,7 @@
     }
     .wrapper-images-tape img {
         width: 19.39vw;
+        height: 19.39vw;
     }
     .key-information-box {
         div {
@@ -461,6 +486,9 @@
         font-size: 1.4vw;
         top: 0;
     }
+    .team-man .name i {
+        font-size: 1vw;
+    }
     .nft-item {
         min-height: 10vw;
     }
@@ -569,33 +597,35 @@
         height: 80% !important;
         bottom: 20%;
     }
-}
-
-@media only screen and (min-width:768px) and (max-width:1024px) {
-    header.header-startpage {
-        height: 100vh;
-        min-height: 100vh;
-        overflow-x: hidden;
+    header.header-basepage .header-text-section {
+        align-self: center;
+    }
+    .header-text.header-text-mini,
+    .header-text {
+        font-size: 7vw;
+        line-height: 110%;
     }
     header.header-basepage {
-        height: 90vh;
-        min-height: 90vh;
-        overflow-x: hidden;
-    }
-}
-
-@media only screen and (max-width:767px) {
-    header.header-startpage {
-        height: auto;
+        // overflow-x: hidden;
+        height: auto !important;
         min-height: 55vh;
-        overflow-x: hidden;
+        padding-bottom: 16vw;
     }
-    header.header-basepage {
-        height: auto;
-        min-height: 50vh;
-        overflow-x: hidden;
+    .header-text.wow.fadeIn.sg-page {
+        padding-top: 8vw;
     }
-    header.header-basepage .cloud-third {
-        width: 55%;
+    .breed-item .breed-item-text p {
+        font-size: 1.5vw;
+    }
+    .checked-nft-section .checked-nft .date {
+        bottom: 5vw;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    header.header-startpage {
+        height: 60vh;
+        min-height: 60vh;
+        overflow-x: hidden;
     }
 }
