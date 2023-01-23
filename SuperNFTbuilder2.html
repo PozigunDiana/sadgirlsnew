@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="assets/css/style.css?ver=17">
+    <link rel="stylesheet" href="assets/css/style.css?ver=18">
     <script src="assets/js/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/fontello/css/fontello.css?ver=1">
     <title>Super NFT Builder</title>
@@ -110,10 +110,6 @@
                 <div class="builder-main-content">
                     <div class="wrapper-for-h1">
                         <h1>Super NFT builder</h1>
-                        <div class="wrapper-buttons">
-                            <a href="#box-1" class="btn tooltip modal-btn" flow="down" tooltip="Corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.">Check matching sets</a>
-                            <a href="" class="btn tooltip" flow="down" tooltip="Corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.">Generate random set</a>
-                        </div>
                     </div>
                     <div id="box-1" class="d-none fancybox-modal-box">
                         <div class="modal-box-bg">
@@ -215,9 +211,21 @@
                 </div>
                 <div class="builder-footer">
                     <button class="btn-maxi tooltip" disabled tooltip="Corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.">Add Super NFT</button>
+                    <div class="wrapper-buttons">
+                        <a href="#box-1" class="btn tooltip modal-btn" flow="down" tooltip="Corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.">Check matching <span>sets</span></a>
+                        <a href="" class="btn tooltip" flow="down" tooltip="Corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.">Generate random <span>set</span></a>
+                    </div>
+                    <div class="wrapper-help-info">
+                        <div class="help" id="help"><span>?</span>
+                            <p>How it works</p>
+                        </div>
+                        <div> My Super NFT </div>
+                    </div>
                 </div>
+
+                <a href="#my-sets-box" class="basket-icon modal-btn"><img src="assets/img/basket-icon.svg" alt=""></a>
             </div>
-            <div class="sets-sidebar">
+            <div class="sets-sidebar" id="my-sets-box">
                 <div class="mint-header">
                     <div class="close-box"><img src="assets/img/close.svg" alt=""></div>
                     <div class="wrapper-mint-head">
@@ -243,7 +251,16 @@
                                     <div class="date">2022/12/31</div>
                                     <div class="wrapper-edit-delete">
                                         <button class="edit"><i class="icon-edit"></i></button>
-                                        <button class="delete"><i class="icon-delete"></i></button>
+                                        <a href="#delete-modal-box" class="modal-btn"><button class="delete"><i class="icon-delete"></i></button></a>
+                                        <div id="delete-modal-box" class="d-none fancybox-modal-box">
+                                            <div class="modal-box">
+                                                <div class="modal-title">Delete set #1?</div>
+                                                <div class="wrapper-modal-btn">
+                                                    <button class="base-btn" data-fancybox-close>Cancel</button>
+                                                    <button class="btn white-btn">Ok</button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -259,7 +276,7 @@
                                     <div class="date">2022/12/31</div>
                                     <div class="wrapper-edit-delete">
                                         <button class="edit"><i class="icon-edit"></i></button>
-                                        <button class="delete"><i class="icon-delete"></i></button>
+                                        <a href="#delete-modal-box" class="modal-btn"><button class="delete"><i class="icon-delete"></i></button></a>
                                     </div>
                                 </div>
                             </div>
@@ -275,7 +292,7 @@
                                     <div class="date">2022/12/31</div>
                                     <div class="wrapper-edit-delete">
                                         <button class="edit"><i class="icon-edit"></i></button>
-                                        <button class="delete"><i class="icon-delete"></i></button>
+                                        <a href="#delete-modal-box" class="modal-btn"><button class="delete"><i class="icon-delete"></i></button></a>
                                     </div>
                                 </div>
                             </div>
